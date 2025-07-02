@@ -6,6 +6,11 @@ A full-stack web application for predicting chronic kidney disease risk using ma
 
 This application helps physicians and individuals identify early signs of kidney disease through a machine learning model trained on key medical indicators. Users can input their medical parameters and receive a risk assessment, CKD stage classification, key risk factors, and personalized medical recommendations.
 
+## Demo Links
+
+- [Frontend Demo https://ckd-dignostic-tool.netlify.app/](https://ckd-dignostic-tool.netlify.app/)
+- [Backend Demo https://ckd-diagnstic-tool-ml.onrender.com/](https://ckd-diagnstic-tool-ml.onrender.com/)
+
 ## Repository Structure
 
 ```
