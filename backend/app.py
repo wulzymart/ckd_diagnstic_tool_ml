@@ -275,11 +275,8 @@ def model_info():
         info = {
             'model_type': type(model).__name__,
             'model_loaded': True,
-            'expected_features': [
-                'serumCreatinine', 'gfr', 'itching', 'fastingBloodSugar',
-                'bunLevels', 'proteinInUrine', 'systolicBP', 'muscleCramps',
-                'serumElectrolytesSodium', 'socioeconomicStatus'
-            ]
+            'expected_features': ['SerumCreatinine', 'GFR', 'Itching', 'FastingBloodSugar',
+       'ProteinInUrine', 'BUNLevels', 'MuscleCramps']
         }
         
         # Try to get additional model info if available
