@@ -1,11 +1,7 @@
 from flask import Flask, request, jsonify
 from flask_cors import CORS
-from joblib import dump, load
-import numpy as np
+from joblib import load
 import os
-os.environ['NUMEXPR_MAX_THREADS'] = '16'
-os.environ['NUMEXPR_NUM_THREADS'] = '8'
-import numexpr as ne
 import logging
 import pandas as pd
 
@@ -24,7 +20,7 @@ def load_model():
     global model
     try:
         model_path = os.path.join(os.path.dirname(__file__), 'rfc_ckd_model.pkl')
-        print(model_path)
+        logger.info(f"Attempting to load model from {model_path}")
         if os.path.exists(model_path):
             with open(model_path, 'rb') as file:
                 model = load(model_path)
@@ -304,4 +300,4 @@ if not model_loaded:
 
 if __name__ == '__main__':
     # Run the Flask app
-    app.run(host='0.0.0.0', port=5000, debug=True)
+    app.run(host='0.0.0.0', port=5000)
