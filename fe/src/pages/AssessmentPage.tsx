@@ -186,7 +186,7 @@ export const AssessmentPage: React.FC = () => {
             </div>
             <p className="text-red-700 mt-1">{apiError}</p>
             <p className="text-red-600 text-sm mt-2">
-              Make sure the Flask server is running on http://localhost:5000
+              Make sure the Flask server is running
             </p>
           </div>
         )}
